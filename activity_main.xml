@@ -1,0 +1,66 @@
+<!--
+    LinearLayout (Root):
+    Organiza os elementos verticalmente na tela. Atua como o container principal
+    que centraliza todo o conteúdo do quiz para uma melhor visualização em diferentes tamanhos de tela.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--
+        TextView de Pergunta:
+        Exibe dinamicamente o texto da questão atual. Possui um padding generoso
+        para não encostar nas bordas e facilitar a leitura do usuário.
+    -->
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="24dp"
+        tools:text="@string/question_goiania" />
+
+    <!--
+        Container Horizontal:
+        Agrupa os botões de ação binária (Verdadeiro/Falso) lado a lado,
+        seguindo padrões comuns de UX para respostas rápidas.
+    -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Botão para confirmar a veracidade da afirmação -->
+        <Button
+            android:id="@+id/true_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/true_button" />
+
+        <!-- Botão para negar a veracidade da afirmação -->
+        <Button
+            android:id="@+id/false_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/false_button" />
+    </LinearLayout>
+
+    <!--
+        Botão Próximo:
+        Permite a navegação para a próxima questão do banco. Inclui um ícone
+        de seta à direita para indicar progressão visual.
+    -->
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_button"
+        app:icon="@drawable/arrow_right"
+        app:iconGravity="end" />
+
+</LinearLayout>

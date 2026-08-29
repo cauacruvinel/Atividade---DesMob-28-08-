@@ -1,0 +1,26 @@
+<!--
+    O arquivo strings.xml é o local centralizado para armazenar todos os textos do aplicativo.
+    Isso facilita a manutenção e permite a tradução do app para outros idiomas (internacionalização)
+    sem a necessidade de alterar o código-fonte Kotlin.
+-->
+<resources>
+    <!-- Identificação do Aplicativo -->
+    <string name="app_name">QuizApp</string>
+
+    <!-- Enunciados das Questões (Banco de Dados de Texto) -->
+    <string name="question_goiania">Goiânia é a capital de Goiás.</string>
+    <string name="question_araguaia">O Rio Araguaia é famoso por suas praias de água doce.</string>
+    <string name="question_caldas">Caldas Novas forma a maior estância hidrotermal do mundo.</string>
+    <string name="question_capital">A cidade de Goiânia sempre foi a capital de Goiás.</string>
+    <string name="question_pequi">Ao comer o pequi, você deve morder o caroço com bastante força.</string>
+    <string name="question_chapada">A Chapada dos Veadeiros é reconhecida como Patrimônio Natural da Humanidade.</string>
+
+    <!-- Rótulos de Componentes da Interface (UI) -->
+    <string name="true_button">Verdadeiro</string>
+    <string name="false_button">Falso</string>
+    <string name="next_button">Próximo</string>
+
+    <!-- Mensagens de Feedback ao Usuário (Toasts) -->
+    <string name="correct_toast">Correto!</string>
+    <string name="incorrect_toast">Incorreto!</string>
+</resources>
